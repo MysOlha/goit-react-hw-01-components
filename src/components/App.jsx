@@ -1,9 +1,11 @@
-import { Profile } from "./Profile/Profile";
 import user from "./Profile/user";
-import data from "./Statistics/data"
-import { FriendList } from "./Friends/FriendList";
-import friends from "./Friends/friends"
+import data from "./Statistics/data";
+import friends from "./Friends/friends";
+import transactions from "./Transaction/transactions"
+import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
+import { FriendList } from "./Friends/FriendList";
+import { TransactionHistory } from "./Transaction/TransactionHistory";
 
 
 
@@ -21,7 +23,8 @@ export const App = () => {
     <Statistics stats={data} />
 
     <FriendList friends={friends} />
-
+    
+    <TransactionHistory items={transactions} />
     
     </div>
   );
