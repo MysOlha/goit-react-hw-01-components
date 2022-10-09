@@ -1,6 +1,5 @@
 import { Profile } from "./Profile/Profile";
 import user from "./Profile/user";
-
 import data from "./Statistics/data"
 import { FriendList } from "./Friends/FriendList";
 import friends from "./Friends/friends"
@@ -18,10 +17,11 @@ export const App = () => {
     avatar={user.avatar}
     stats={user.stats} />
 
-  <Statistics title="Upload stats" stats={data} />
-  <Statistics stats={data} />
+    <Statistics title="Upload stats" stats={data} />
+    <Statistics stats={data} />
 
-    {/* <FriendList friends={friends[0]} />  */}
+    <FriendList friends={friends} />
+
     
     </div>
   );
